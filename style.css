@@ -1,0 +1,78 @@
+
+* {
+	box-sizing: border-box;
+}
+	
+body {
+	padding: 15px;
+	background-color: blueviolet;
+	background-image: url(ITS.png);
+}
+	
+.container {
+	max-width: 1200px;
+	margin: auto;
+	border-color: #5443d1;
+	background-color: aqua;
+}
+	
+h1 {
+	color: rgb(0, 0, 0);
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+	
+a:hover {
+	color: lightblue;
+}
+p {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+
+}
+.row {
+	margin: 0px -18px;
+	padding: 8px;
+}
+	
+.row > .column {
+	padding: 6px;
+}
+	
+.column {
+	float: left;
+	width: 25%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+	
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+	
+.content {
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gray;
+	text-align: center;	
+}
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+	.column {
+		width: 50%;
+	}
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+	.column {
+		width: 100%;
+	}
+}
